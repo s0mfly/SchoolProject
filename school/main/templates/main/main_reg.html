@@ -1,0 +1,26 @@
+{% extends 'main/layout.html' %}
+{% block title %} Регистрация {% endblock %}
+{% block content %}
+
+<h2 class="featuress" style="font-style: italic" id = 'nomb'> Зарегистрируйтесь, пожалуйста, заполнив 4 поля </h2>
+<h4 class="featuress" style="font-style: italic" id = 'wait'> Логин должен быть уникальным, по нему вы будете входить в приложение, не забудьте его! </h4>
+
+
+<div class="features">
+<form action="" method="get">
+{% csrf_token %}
+<h4> <input type="text" id="inpu0" name="lg" placeholder='Уникальный Логин' maxlength="30" size="20"> </h4>
+<h4> <input type="text" id="inpu1" name="email" placeholder='Ваша электронная почта' maxlength="100" size="20"> </h4>
+<h4> <input type="text" id="inpu2" name="fam" placeholder='Ваша Фамилия' maxlength="25" size="20"> </h4>
+<h4> <input type="text" id="inpu3" name="name" placeholder='Ваше Имя' maxlength="25" size="20"> </h4>
+<h4> <input type="text" id="inpu4" name="kl" placeholder='Ваш класс' maxlength="25" size="20"> </h4>
+
+<h4 style="font-style: italic"> Логин должен быть довольно сложным, чтобы его не смогли повторить другие игроки. </h4>
+<h4 style="font-style: italic"> Если введенный логин уже будет в базе данных, придется заполнить форму заново. </h4>
+<h4 style="font-style: italic"> В ТОП таблице будут указаны Ваши ФИК (или ФИО)) </h4>
+<h4 id = 'wait0'> </h4><button class="btn btn-success btn" id = 'butt1' type="submit" name="intlg" onclick="Func()"> ВВЕСТИ </button></br></br>
+<a href="{% url 'home' %}" id = 'butt2' class="btn btn-success btn-sm"> Начальное меню </a></br></br>
+
+</form>
+</div>
+{% endblock %}

@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    position: relative;
+    font-family: monospace;
+}
+
+main {
+    min-height: 100vh;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 72px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+}
+
+.topnav {
+    height: 100%;
+
+    display: flex;
+}
+
+.link {
+    text-decoration: none;
+    color: #444;
+    font-family: monospace;
+    font-size: 14px;
+
+
+
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link > div {
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+
+.link + .link {
+    margin-left: 32px;
+}
+
+.link:hover > div {
+    border-bottom-color: #444;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    font-family: monospace;
+
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 36px;
+    text-align: center;
+    color: #444;
+    margin-top: 0;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 300px;
+}
+
+.textfield {
+    -webkit-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+
+    padding: 0;
+    padding-left: 8px;
+    border: 2px solid #ffcc00;
+
+    height: 40px;
+
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    outline: none;
+}
+
+.textfield::placeholder {
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.textfield__size-s {
+    max-width: 180px;
+}
+
+.textfield__size-full {
+    max-width: 300px;
+}
+
+.btn {
+    -webkit-appearance: none;
+    appearance: none;
+    display: block;
+
+    background-color: #ffcc00;
+
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+
+    font-family: monospace;
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+    outline: none;
+}
+
+.btn_abs-wrapper {
+    width: 100px;
+    position: absolute;
+    right: 16px;
+}
+
+.btn:hover {
+    background-color: #f1c102;
+}
+
+
+
+.logo-wrapper {
+    width: 100px;
+    position: absolute;
+    left: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    font-family: monospace;
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+
+    text-shadow: 2px 2px 0 #ffcc00, 4px 4px 0 #444;
+    transform: skew(-15deg) rotate(15deg);
+}

@@ -1,0 +1,24 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+{% csrf_token %}
+<form action="" method="get">
+    <div class="features">
+      <br>
+      <br>
+      {% if razn < 0  %}
+      <h2> К сожалению, вы не смогли побить свой пердыдущий рекорд. Есть к чему стремиться! </h2>
+      <h3> До вашего рекорда не хватило {{ absRazn }} </h3>
+      {% endif %}
+      {% if razn == 0  %}
+      <h2> Вы повторили свой рекорд! </h2>
+      {% endif %}
+      {% if razn > 0  %}
+      <h2> Поздравляем! Вы заслужили похвалу) Ваш рекорд побит на {{ razn }}!!!!!!! </h2>
+      {% endif %}
+      <a href="{% url 'zada4i_tems' %}" id = "butt4" class="btn btn-success"> К ВЫБОРУ ТЕМ </a></br></br>
+    </div>
+</form>
+{% endblock %}
