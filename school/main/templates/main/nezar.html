@@ -2,13 +2,13 @@
 {% block title %} Логин не зарегистрирован {% endblock %}
 {% block content %}
 
-    <div class="features">
+    <div class="box inner-offset">
         </br>
         </br>
-        <h2> УВЫ! </h2></br>
-        <h2> Такой логин не зарегистрирован </h2></br>
+        <h2 align="center"> УВЫ! </h2></br>
+        <h2 align="center"> Такой логин не зарегистрирован </h2></br>
         <form action="" method="get">
-             <a href="{% url 'home' %}" class="btn btn-success"> ВЕРНУТЬСЯ </a>
+             <a href="{% url 'index' %}" class="reset link border"> ВЕРНУТЬСЯ </a>
         </form>
     </div>
 {% endblock %}

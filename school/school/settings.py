@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'school.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'vovar3573_bd0912',
-        'USER': 'vovar3573_bd0912',
-        'PASSWORD': 'Artem09122022',
+        'NAME': 'vovar3573_bd0606',
+        'USER': 'vovar3573_bd0606',
+        'PASSWORD': 'DataBaseArtem24',
         'HOST': 'vovar3573.beget.tech',
         'PORT': '3306',
         'OPTIONS': {
@@ -89,6 +89,10 @@ DATABASES = {
     }
 }
 
+
+# 'NAME': 'vovar3573_bd0912',
+#         'USER': 'vovar3573_bd0912',
+#         'PASSWORD': 'Artem09122022',
 #DATABASES = {
 #   'default': {
 #       'ENGINE': 'django.db.backends.sqlite3',
@@ -133,10 +137,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-EMAIL_HOST = 'smtp.timeweb.ru'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.mail.ru'
 EMAIL_PORT = 2525
-EMAIL_HOST_USER = 'u4help@u4ithelp.ru'
-EMAIL_HOST_PASSWORD = 'LoveLord21'
+EMAIL_USE_TLS = True  # Использовать TLS-шифрование (опционально)
+EMAIL_USE_SSL = False
+EMAIL_HOST_USER = 'geometrix2023_2024@mail.ru'
+EMAIL_HOST_PASSWORD = 'u7kqkdG9nyJyb9nnCx4h'
+
+TELEGRAM_BOT_TOKEN = '6565010045:AAEDNDSr8auFdpAloDoihYC2A8HwsqWX8Vc'
+TELEGRAM_CHAT_ID = '914614230'
 
 STATIC_URL = '/static/'
 

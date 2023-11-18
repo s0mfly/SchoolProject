@@ -1,18 +1,19 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}Про создателей{% endblock %}
+{% block title %}Темы задач{% endblock %}
 
 {% block content %}
-    <div class="features">
-        <h2>Привет! Перед тобой 4 темы, каждую из которых тебе нужно решить. Удачи!</h2>
-        <br>
-        <br>
-        <a href="{% url 'begin' %}" id = "butt1" class="btn btn-success"> 1. Прямоугольные треугольники </a><br>
-        <br>
-        <a href="{% url 'begin2' %}" id = "butt2" class="btn btn-success"> 2. Многоугольники </a><br>
-        <br>
-        <a href="{% url 'begin3' %}" id = "butt3" class="btn btn-success"> 3. Описанные окружности </a><br>
-        <br>
-        <a href="{% url 'begin4' %}" id = "butt4" class="btn btn-success"> 4. Описанные окружности </a><br>
+    <div class="wrapper">
+        <div class="box">
+            <h2 class="title">Задачи</h2>
+
+            <a href="{% url 'begin' %}" id = "butt1" class="task-link"> 1. Прямоугольные треугольники </a><br>
+
+            <a href="{% url 'begin2' %}" id = "butt2" class="task-link"> 2. Многоугольники </a><br>
+
+            <a href="{% url 'begin3' %}" id = "butt3" class="task-link"> 3. Описанные окружности </a><br>
+
+            <a href="{% url 'begin4' %}" id = "butt4" class="task-link"> 4. Вписанные окружности </a><br>
+        </div>
     </div>
 {% endblock %}

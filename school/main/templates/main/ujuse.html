@@ -2,13 +2,13 @@
 {% block title %} Этот логин уже используется {% endblock %}
 {% block content %}
 
-    <div class="features">
+    <div class="box inner-offset">
         </br>
         </br>
-        <h2> УВЫ! </h2></br>
-        <h2> Такой логин уже зарегистрирован, придумайте другой. </h2></br>
+        <h2 align="center"> УВЫ! </h2></br>
+        <h2 align="center"> Такой логин уже зарегистрирован, придумайте другой. </h2></br>
         <form action="" method="get">
-             <a href="{% url 'regist' %}" class="btn btn-success"> ЯСНО </a>
+             <a href="{% url 'regist' %}" class="reset link border"> ЯСНО </a>
         </form>
     </div>
 {% endblock %}

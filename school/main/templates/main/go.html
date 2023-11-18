@@ -1,14 +1,16 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}Про создателей{% endblock %}
+{% block title %}Погнали{% endblock %}
 
 {% block content %}
 {% csrf_token %}
 <form action="" method="get">
-    <div class="features">
-        <h2>Успеха!</h2>
+    <div class="wrapper">
+        <div class="box">
+        <h2 class="title">Пора начать!</h2>
             <h4 id = 'answers1'> </h4><button class="btn btn-success btn" id = 'butt0' type="submit" name="go"
-                                              onclick="Func()"> Погнали! </button>
+                                              onclick="Func()"> Вперед! </button>
+                                            </div>
     </div>
     </form>
 {% endblock %}

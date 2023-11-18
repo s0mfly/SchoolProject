@@ -11,14 +11,11 @@
 </head>
 <body>
     <header>
-        <div class="logo-wrapper">
-            <div class="logo">LOGO</div>
-        </div>
 
         <nav class="topnav">
             <a href="{% url 'home' %}" class="link"><div>Главная</div></a>
-            <a href="{% url 'about' %}" class="link"><div>Инструкция</div></a>
-            <a href="{% url 'news_home' %}" class="link"><div>Создатель</div></a>
+            <a href="{% url 'instruction' %}" class="link"><div>Инструкция</div></a>
+            <a href="{% url 'developers' %}" class="link"><div>Создатели</div></a>
             <a href="{% url 'table' %}" class="link"><div>Таблица лидеров</div></a>
         </nav>
         {% if user.is_authenticated %}
